@@ -28,12 +28,6 @@ jobs:
       run: npm ci
     - name: Run tests with coverage
       run: npm run test:coverage
-    - name: Upload coverage to Codecov
-      if: matrix.node-version == '18.x'
-      uses: codecov/codecov-action@v3
-      with:
-        file: ./coverage/lcov.info
-        fail_ci_if_error: false
   lint:
     runs-on: ubuntu-latest
     steps:
