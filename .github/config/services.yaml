@@ -1,0 +1,8 @@
+repository:
+  name: workspace
+  type: single-service
+services:
+  default:
+    path: .
+    language: javascript
+    language_version: '18'
